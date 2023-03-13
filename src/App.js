@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Styles.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>TOGGLER SWITCH</h1>
       </header>
+      <div className="toggleBtn">
+        <label className="toggle">
+          <input type="checkbox" />
+          <span className="slider"></span>
+          <span
+            className="labels"
+            data-on="ABSOLUTE"
+            data-off="ABSOLUTE"
+          ></span>
+        </label>
+      </div>
     </div>
   );
 }
